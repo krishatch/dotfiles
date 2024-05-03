@@ -10,5 +10,7 @@ Ensure that these dependencies are installed
   - git
   - stow
   - nvim
+- make
+- gcc and g+++
 - npm
 - pip
