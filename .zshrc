@@ -16,8 +16,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="robbyrussell"
-source /usr/local/share/powerlevel10k/powerlevel10k.zsh-theme
+ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -195,7 +194,3 @@ _fzf_comprun() {
 # ----- Bat (better cat) -----
 
 export BAT_THEME=tokyonight_night
-
-# thefuck alias
-eval $(thefuck --alias)
-eval $(thefuck --alias fk)
