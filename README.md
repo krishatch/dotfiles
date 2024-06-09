@@ -18,6 +18,8 @@ Ensure that these dependencies are installed
 ## Installation Process
 
 1. Download alacritty
+   - download alacritty-themes
+     `git clone https://github.com/alacritty/alacritty-theme ~/.config/alacritty/themes`
 2. Download oh-my-zsh
 3. Download p10k
    - run `p10k`
