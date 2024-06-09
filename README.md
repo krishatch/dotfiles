@@ -20,6 +20,8 @@ Ensure that these dependencies are installed
 1. Download alacritty
    - download alacritty-themes
      `git clone https://github.com/alacritty/alacritty-theme ~/.config/alacritty/themes`
+   - download coolnight theme (Josean Martinez)
+     `curl https://raw.githubusercontent.com/josean-dev/dev-environment-files/main/.config/alacritty/themes/themes/coolnight.toml --output ~/.config/alacritty/themes/themes/coolnight.toml`
 2. Download oh-my-zsh
 3. Download p10k
    - run `p10k`
