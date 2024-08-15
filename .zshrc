@@ -115,6 +115,7 @@ alias cbr='cargo build --release'
 alias tm='tmux'
 alias tmk='tmux kill-session'
 alias c='clear'
+alias tb='taskboardcli'
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 
