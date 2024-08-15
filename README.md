@@ -23,6 +23,7 @@ Ensure that these dependencies are installed
    - download coolnight theme (Josean Martinez)
      `curl https://raw.githubusercontent.com/josean-dev/dev-environment-files/main/.config/alacritty/themes/themes/coolnight.toml --output ~/.config/alacritty/themes/themes/coolnight.toml`
 2. Download oh-my-zsh
+ - `sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`
 3. Download p10k
    - run `p10k`
 4. Download zsh plugins
