@@ -1,1 +1,0 @@
-kris/core/colorscheme.lua
