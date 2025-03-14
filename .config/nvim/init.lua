@@ -15,4 +15,7 @@ require("kris.plugins.autopairs")
 require("kris.plugins.treesitter")
 require("kris.plugins.gitsigns")
 require("kris.plugins.vimtex")
-require("kris.plugins.nvim-todo")
+require("kris.plugins.todo")
+
+-- vim.opt.rtp:append("~/Engineering/neovim/plugins/present.nvim")
+-- vim.opt.rtp:append("~/Engineering/neovim/plugins/todo.nvim")

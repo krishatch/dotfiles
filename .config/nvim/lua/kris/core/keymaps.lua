@@ -43,7 +43,7 @@ keymap.set("n", "<leader>fh", "<cmd>Telescope help_tags<cr>") -- list available 
 
 -- nvim-todo
 keymap.set("n", "<leader>fw", function()
-	require("nvim-todo").open_window()
+	require("todo").open_window()
 end)
 
 -- nvim-dap

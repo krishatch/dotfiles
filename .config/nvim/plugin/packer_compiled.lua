@@ -227,6 +227,11 @@ _G.packer_plugins = {
     path = "/Users/kris/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
+  ["todo.nvim"] = {
+    loaded = true,
+    path = "/Users/kris/.local/share/nvim/site/pack/packer/start/todo.nvim",
+    url = "https://github.com/krishatch/todo.nvim"
+  },
   ["transparent.nvim"] = {
     loaded = true,
     path = "/Users/kris/.local/share/nvim/site/pack/packer/start/transparent.nvim",

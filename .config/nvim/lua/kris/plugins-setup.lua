@@ -28,6 +28,8 @@ end
 
 -- add list of plugins to install
 return packer.startup(function(use)
+	use("krishatch/todo.nvim")
+
 	-- packer can manage itself
 	use("wbthomason/packer.nvim")
 
