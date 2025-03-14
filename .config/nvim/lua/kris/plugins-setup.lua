@@ -115,13 +115,13 @@ return packer.startup(function(use)
 	use("xiyaowong/transparent.nvim")
 
 	-- Distant
-	use({
-		"chipsenkbeil/distant.nvim",
-		branch = "v0.3",
-		config = function()
-			require("distant"):setup()
-		end,
-	})
+	-- use({
+	-- 	"chipsenkbeil/distant.nvim",
+	-- 	branch = "v0.3",
+	-- 	config = function()
+	-- 		require("distant"):setup()
+	-- 	end,
+	-- })
 
 	if packer_bootstrap then
 		require("packer").sync()
