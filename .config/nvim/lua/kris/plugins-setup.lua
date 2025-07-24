@@ -28,14 +28,10 @@ end
 
 -- add list of plugins to install
 return packer.startup(function(use)
-	use("krishatch/todo.nvim")
-
 	-- packer can manage itself
 	use("wbthomason/packer.nvim")
 
 	use("nvim-lua/plenary.nvim") -- lua functions that many plugins use
-
-	-- use("mfussenegger/nvim-dap") -- debug adapter protocol
 
 	use("bluz71/vim-nightfly-guicolors") -- preferred colorscheme
 
@@ -45,6 +41,7 @@ return packer.startup(function(use)
 
 	-- essential plugins
 	use("tpope/vim-surround") -- add, delete, change surroundings (it's awesome)
+
 	use("vim-scripts/ReplaceWithRegister") -- replace with register contents using motion (gr + motion)
 
 	-- commenting with gc
@@ -75,21 +72,6 @@ return packer.startup(function(use)
 
 	use("ggandor/lightspeed.nvim")
 
-	-- managing & installing lsp servers, linters & formatters
-	use("williamboman/mason.nvim") -- in charge of managing lsp servers, linters & formatters
-	use("williamboman/mason-lspconfig.nvim") -- bridges gap b/w mason & lspconfig
-
-	-- configuring lsp servers
-	use("neovim/nvim-lspconfig") -- easily configure language servers
-	use("hrsh7th/cmp-nvim-lsp") -- for autocompletion
-	use({ "glepnir/lspsaga.nvim", branch = "main" }) -- enhanced lsp uis
-	use("jose-elias-alvarez/typescript.nvim") -- additional functionality for typescript server (e.g. rename file & update imports)
-	use("onsails/lspkind.nvim") -- vs-code like icons for autocompletion
-
-	-- formatting & linting
-	use("jose-elias-alvarez/null-ls.nvim") -- configure formatters & linters
-	use("jayp0521/mason-null-ls.nvim") -- bridges gap b/w mason & null-ls
-
 	-- treesitter configuration
 	use({
 		"nvim-treesitter/nvim-treesitter",
@@ -104,24 +86,9 @@ return packer.startup(function(use)
 	-- git integration
 	use("lewis6991/gitsigns.nvim") -- show line modifications on left hand side
 
-	-- Java: nvim-jdtls
-	use("mfussenegger/nvim-jdtls")
-
-	-- LaTeX
-	use("lervag/vimtex")
-	-- use("xuhdev/vim-latex-live-preview")
-
 	-- Transparent nvim
 	use("xiyaowong/transparent.nvim")
 
-	-- Distant
-	-- use({
-	-- 	"chipsenkbeil/distant.nvim",
-	-- 	branch = "v0.3",
-	-- 	config = function()
-	-- 		require("distant"):setup()
-	-- 	end,
-	-- })
 
 	if packer_bootstrap then
 		require("packer").sync()
