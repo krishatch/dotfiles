@@ -22,3 +22,17 @@ lspconfig.clangd.setup({
   on_attach = on_attach,
   capabilities = capabilities,
 })
+
+lspconfig.rust_analyzer.setup({
+  on_attach = on_attach,
+  capabilities = capabilities,
+  settings = {
+    ["rust-analyzer"] = {
+      cargo = {allFeatures = true},
+      checkOnSave = true,
+      check = {
+        command = "clippy"
+      },
+    }
+  }
+})
