@@ -72,6 +72,9 @@ return packer.startup(function(use)
 
 	use("ggandor/lightspeed.nvim")
 
+  -- lsp
+  use("neovim/nvim-lspconfig")
+
 	-- treesitter configuration
 	use({
 		"nvim-treesitter/nvim-treesitter",
