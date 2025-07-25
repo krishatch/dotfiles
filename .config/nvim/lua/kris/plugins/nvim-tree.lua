@@ -1,37 +1,9 @@
-local setup, nvimtree = pcall(require, "nvim-tree")
-if not setup then
-    return
-end
+return {
+	'nvim-tree/nvim-tree.lua',
+	config = function()
+		local nvim_tree = require("nvim-tree")
+		nvim_tree.setup{}
 
--- recommended settings from the nvim-tree documantation
-vim.g.loaded = 1
-vim.g.loaded_netrwPlugin = 1 
-
--- change color for arrows in tree to light blue
-vim.cmd([[ highlight NvimTreeIndentMarker guifg=#FFC0CB ]]) 
- 
--- configure nvim-tree
-nvimtree.setup({
-	-- change folder arrow icons
-	renderer = {
-		icons = {
-			glyphs = {
-				folder = {
-					arrow_closed = "", -- arrow when folder is closed
-					arrow_open = "", -- arrow when folder is open
-				},
-			},
-		},
-	},
-	-- disable window_picker for
-	-- explorer to work well with
-	-- window splits
-	actions = {
-		open_file = {
-			window_picker = {
-				enable = false,
-			},
-		},
-	},
-})
-
+		vim.keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>")
+	end
+}
