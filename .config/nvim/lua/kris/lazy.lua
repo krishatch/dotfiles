@@ -25,5 +25,6 @@ vim.g.maplocalleader = "\\"
 require("lazy").setup({
   spec = {
 	{ import = "kris.plugins" },
+	{ import = "kris.lsp"},
   },
 })
