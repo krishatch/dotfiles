@@ -6,9 +6,6 @@ local keymap = vim.keymap
 keymap.set("i", "jk", "<ESC>")
 keymap.set("n", "<leader>nh", ":nohl<CR>")
 
--- delete single character without copying to register
-keymap.set("n", "x", "_x")
-
 -- Window management
 keymap.set("n", "<leader>sv", "<C-w>v") -- vertical split
 keymap.set("n", "<leader>sh", "<C-w>s") -- horizontal split
