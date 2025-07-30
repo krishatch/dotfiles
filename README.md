@@ -1,12 +1,12 @@
 # My dotfiles
 
-This directory contains the dotfiles for my MacOS system
+This directory contains the dotfiles for my unix-based systems (Arch/MacOS) 
 
 ## Requirements
 
 Ensure that these dependencies are installed
 
-- brew
+- brew/pacman
   - git
   - stow
   - nvim
@@ -17,11 +17,7 @@ Ensure that these dependencies are installed
 
 ## Installation Process
 
-1. Download alacritty
-   - download alacritty-themes
-     `git clone https://github.com/alacritty/alacritty-theme ~/.config/alacritty/themes`
-   - download coolnight theme (Josean Martinez)
-     `curl https://raw.githubusercontent.com/josean-dev/dev-environment-files/main/.config/alacritty/themes/themes/coolnight.toml --output ~/.config/alacritty/themes/themes/coolnight.toml`
+1. Download kitty
 2. Download oh-my-zsh
  - `sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`
 3. Download p10k
@@ -31,5 +27,5 @@ Ensure that these dependencies are installed
    - `git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting`
 5. Add plugins somewhere in `.zshrc`
    - `plugins=(git zsh-autosuggestions zsh-syntax-highlighting)`
-6. Source plugins
+6. Source zshrc file
    - `source .zshrc`
