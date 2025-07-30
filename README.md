@@ -10,6 +10,7 @@ Ensure that these dependencies are installed
   - git
   - stow
   - nvim
+  - tmux
 - make
 - gcc and g+++
 - npm
