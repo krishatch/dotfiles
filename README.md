@@ -28,5 +28,6 @@ Ensure that these dependencies are installed
    - `git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting`
 5. Add plugins somewhere in `.zshrc`
    - `plugins=(git zsh-autosuggestions zsh-syntax-highlighting)`
-6. Source zshrc file
+6. Use `stow .` in dotfiles directory to symlink all config files to correct locations
+7. Source zshrc file
    - `source .zshrc`
